@@ -12,7 +12,39 @@ AG-Nestly is a property rental application, similar to Airbnb, built with **Next
 - Secure session and password management using NextAuth
 - Responsive design for mobile and desktop
 
----
+
+## Getting Started
+
+**Clone the repository**
+   - To clone the project, open your terminal and run the following command:
+     ```bash
+     git clone https://github.com/AngelaGrozdanova/AG-Nestly.git
+     ```
+     
+**Start the App**
+
+ - Install dependencies:
+     ```bash
+     npm install
+     ```
+   - Start the application:
+     ```bash
+     npm run dev
+     ```
+   - This will start the app and open it in your browser at [http://localhost:3000](http://localhost:3000).
+
+## Configure Environment Variables
+
+-- Create a .env file in the root directory:
+
+- DATABASE_URL="mongodb+srv://<username>:<password>@cluster.mongodb.net/airbnb?retryWrites=true&w=majority"
+- NEXTAUTH_SECRET="your_nextauth_secret"
+- GITHUB_ID="your_github_id"
+- GITHUB_SECRET="your_github_secret"
+- GOOGLE_CLIENT_ID="your_google_client_id"
+- GOOGLE_CLIENT_SECRET="your_google_client_secret"
+- NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="your_cloud_name"
+
 
 ## 🛠 Tech Stack
 
@@ -21,46 +53,3 @@ AG-Nestly is a property rental application, similar to Airbnb, built with **Next
 - Database: MongoDB
 - Authentication: NextAuth.js
 - File Uploads: Cloudinary
-
----
-
-## Getting Started
-
-### Clone the Repository
-
-``bash
-git clone https://github.com/AngelaGrozdanova/AG-Nestly.git
-cd AG-Nestly
-
-## Install Dependencies
-
-`bash
-npm install
-- or
-yarn install
-- or
-pnpm install
-
-## Configure Environment Variables
-
--- Create a .env file in the root directory:
-
-DATABASE_URL="mongodb+srv://<username>:<password>@cluster.mongodb.net/airbnb?retryWrites=true&w=majority"
-NEXTAUTH_SECRET="your_nextauth_secret"
-GITHUB_ID="your_github_id"
-GITHUB_SECRET="your_github_secret"
-GOOGLE_CLIENT_ID="your_google_client_id"
-GOOGLE_CLIENT_SECRET="your_google_client_secret"
-NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="your_cloud_name"
-
-## Start the Development Server
-
-npm run dev
-- or
-yarn dev
-- or
-pnpm dev
-
--- Open http://localhost:3000 in your browser.
-
-
