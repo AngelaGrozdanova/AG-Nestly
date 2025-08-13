@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+.leaflet-bottom,
+.leaflet-control,
+.leaflet-pane,
+.leaflet-top {
+  z-index: 0 !important;
+}
+
+.bg-rose-500 {
+  background-color: oklch(0.69 0.17 154.02);
+  box-shadow: 0 4px 10px oklch(0.85 0.1 154.02);
+  color: white;
+  border: 1px solid oklch(54.276% 0.08612 152.834);
+}
+
+.bg-rose-501 {
+  background-color: oklch(0.69 0.17 154.02);
+  box-shadow: 0 4px 10px oklch(0.85 0.1 154.02);
+  color: white;
+}
+
+.bg-nestly {
+  position: relative;
+}
+
+.bg-1 {
+  position: absolute;
+  top: 100px;
+  right: 660px;
+}
+
+.bg-2 {
+  position: absolute;
+  bottom: 490px;
+  left: 1190px;
+  rotate: 250deg;
+}
+
+.bg-3 {
+  position: absolute;
+  bottom: 150px;
+  right: 600px;
+  z-index: -1000;
+}
+
+.bg-4 {
+  position: absolute;
+  top: 500px;
+  left: 1050px;
+  z-index: -1000;
+}
+
+.rdrMonth {
+  width: 100% !important;
+}
+
+.rdrCalendarWrapper {
+  width: 100% !important;
+  font-size: 16px !important;
+}
+
+.max-w-3xl {
+  max-width: 1300px;
+}
+
+.max-h-\[300px\] {
+  max-height: 443px;
+}
+
+.bgg {
+  position: absolute;
+  top: 250px;
+  left: 1050px;
+  z-index: -1000;
+}
+
+.bgf {
+  position: absolute;
+  top: -50px;
+  right: 390px;
+  z-index: -1000;
+}
+
+.bgr {
+  position: absolute;
+  top: -190px;
+  left: 1050px;
+  z-index: -1000;
+}
+
+.bgh {
+  position: absolute;
+  top: -390px;
+  left: 150px;
+  z-index: -1000;
+}
+
+.bgj {
+  position: absolute;
+  top: -390px;
+  left: 650px;
+  z-index: -1000;
+}
+
+@media (max-width: 600px) {
+  .bg-2,
+  .bg-4,
+  .bgg,
+  .bgf,
+  .bgh,
+  .bgr,
+  .bgj {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .bg-2,
+  .bg-4,
+  .bgg,
+  .bgf,
+  .bgh,
+  .bgr,
+  .bgj {
+    display: none;
+  }
+}
+
+@media (max-width: 1400px) {
+  .bg-2,
+  .bgg,
+  .bgf,
+  .bgh,
+  .bgr,
+  .bgj {
+    position: absolute;
+    bottom: 444px;
+    left: 936px;
+    z-index: -100;
+    rotate: 212deg;
+  }
+
+  .bg-4,
+  .bgg,
+  .bgf,
+  .bgh,
+  .bgr,
+  .bgj {
+    position: absolute;
+    top: 500px;
+    left: 889px;
+    z-index: -1000;
+  }
+}
