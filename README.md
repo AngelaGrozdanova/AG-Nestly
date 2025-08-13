@@ -34,11 +34,11 @@ cd AG-Nestly
 
 ## Install Dependencies
 
-``bash
+`bash
 npm install
-# or
+- or
 yarn install
-# or
+- or
 pnpm install
 
 ## Configure Environment Variables
@@ -56,9 +56,9 @@ NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="your_cloud_name"
 ## Start the Development Server
 
 npm run dev
-# or
+- or
 yarn dev
-# or
+- or
 pnpm dev
 
 -- Open http://localhost:3000 in your browser.
