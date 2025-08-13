@@ -1,27 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# AG-Nestly
+
+AG-Nestly is a property rental application, similar to Airbnb, built with **Next.js**, **Prisma**, **MongoDB**, **NextAuth**, and **Cloudinary**.
+
+---
+
+## Features
+
+- List and search properties
+- Sign up and log in with Google and GitHub
+- Upload property images via Cloudinary
+- Secure session and password management using NextAuth
+- Responsive design for mobile and desktop
+
+---
 
 ## Getting Started
 
-First, run the development server:
+First, clone the repository:
 
 ```bash
+git clone https://github.com/AngelaGrozdanova/AG-Nestly.git
+cd AG-Nestly
+
+npm install
+# or
+yarn install
+# or
+pnpm install
+
+---
+
+## Create a .env file
+
+DATABASE_URL="mongodb+srv://<username>:<password>@cluster.mongodb.net/airbnb?retryWrites=true&w=majority"
+NEXTAUTH_SECRET="your_nextauth_secret"
+GITHUB_ID="your_github_id"
+GITHUB_SECRET="your_github_secret"
+GOOGLE_CLIENT_ID="your_google_client_id"
+GOOGLE_CLIENT_SECRET="your_google_client_secret"
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="your_cloud_name"
+
+---
+
+## Start the development server:
+
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+-- Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Tech Stack:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-
+-- Frontend: Next.js, React, Tailwind CSS
+-- Backend: Next.js API Routes, Prisma ORM
+-- Database: MongoDB Atlas
+-- Authentication: NextAuth.js
+-- File Uploads: Cloudinary
