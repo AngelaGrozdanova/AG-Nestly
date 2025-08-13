@@ -1,6 +1,6 @@
 # AG-Nestly
 
-AG-Nestly is a property rental application, similar to Airbnb, built with **Next.js**, **Prisma**, **MongoDB**, **NextAuth**, and **Cloudinary**.
+AG-Nestly is a property rental application, built with **Next.js**, **Prisma**, **MongoDB**, **NextAuth**, and **Cloudinary**.
 
 ---
 
