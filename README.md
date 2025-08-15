@@ -1,10 +1,10 @@
-![Homepage](public/images/screen.png)
-
 # AG-Nestly
 
 AG-Nestly is a property rental application, built with **Next.js**, **Prisma**, **MongoDB**, **NextAuth**, and **Cloudinary**.
 
 ---
+![Homepage](public/images/screen.png)
+
 
 ## Features
 
