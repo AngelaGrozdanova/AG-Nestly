@@ -57,5 +57,10 @@ AG-Nestly is a property rental application, built with **Next.js**, **Prisma**, 
 - File Uploads: Cloudinary
 
 ![Homepage](land.png)
-![Homepage](prop.png)
+--
+
 ![Homepage](nest.png)
+---
+
+![Homepage](prop.png)
+--
