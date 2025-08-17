@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
       "avatars.githubusercontent.com", // GitHub
       "lh3.googleusercontent.com", // Google
       "res.cloudinary.com",
+      "premiotravel.bg",
     ],
   },
 };
