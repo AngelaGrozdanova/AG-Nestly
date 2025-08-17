@@ -118,55 +118,22 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
       <hr />
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="col-span-1 md:col-span-3">
-          <div className="text-md font-semibold mb-2">Guest Ratings</div>
-          <div className="space-y-3 text-sm text-neutral-700 w-full">
-            {[
-              { label: "Cleanliness", icon: "🧼", value: 5.0 },
-              { label: "Accuracy", icon: "📍", value: 5.0 },
-              { label: "Check-in", icon: "🔑", value: 4.8 },
-              { label: "Communication", icon: "💬", value: 5.0 },
-              { label: "Location", icon: "🌍", value: 5.0 },
-              { label: "Value", icon: "💰", value: 4.9 },
-            ].map(({ label, icon, value }) => (
-              <div
-                key={label}
-                className="flex items-center justify-between gap-4"
-              >
-                <div className="flex items-center gap-2 w-32">
-                  <span className="text-lg">{icon}</span>
-                  <span>{label}</span>
-                </div>
-                <div className="flex-1 h-2 bg-neutral-200 rounded-full relative overflow-hidden">
-                  <div
-                    className="bg-emerald-500 h-full absolute top-0 left-0 rounded-full transition-all duration-300"
-                    style={{ width: `${(value / 5) * 100}%` }}
-                  />
-                </div>
-                <div className="w-10 text-right font-medium">
-                  {value.toFixed(1)}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="bg-neutral-100 rounded-xl p-4 shadow-md">
-          <div className="text-md font-semibold mb-4 flex items-center gap-2">
-            <span className="text-lg">🏠</span>
+        {/* House Rules */}
+        <div className="rounded-2xl border border-neutral-200 bg-rose-501 shadow-sm hover:shadow-md transition p-6">
+          <div className="text-lg font-semibold mb-4 flex items-center gap-3 text-neutral-700">
+            <span className="text-xl">🏠</span>
             House Rules
           </div>
           <ul className="space-y-3">
             {[
               { text: "No smoking", icon: "🚭" },
               { text: "No pets", icon: "🐾" },
-
               { text: "Check-in after 3:00 PM", icon: "🕒" },
               { text: "Check-out before 11:00 AM", icon: "⏰" },
             ].map(({ text, icon }, index) => (
               <li
                 key={index}
-                className="flex items-center gap-3 text-sm transition-colors duration-200"
+                className="flex items-center gap-3 text-sm text-neutral-700 bg-neutral-50 rounded-lg px-3 py-2 hover:bg-neutral-100 transition"
               >
                 <span className="text-lg">{icon}</span>
                 <span>{text}</span>
@@ -175,9 +142,10 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
           </ul>
         </div>
 
-        <div className="bg-neutral-100 rounded-xl p-4 shadow-md">
-          <div className="text-md font-semibold mb-4 flex items-center gap-2">
-            <span className="text-lg">❌</span>
+        {/* Cancellation Policy */}
+        <div className="rounded-2xl border border-neutral-200 bg-white shadow-sm hover:shadow-md transition p-6">
+          <div className="text-lg font-semibold mb-4 flex items-center gap-3 text-neutral-700">
+            <span className="text-xl">❌</span>
             Cancellation Policy
           </div>
           <ul className="space-y-3">
@@ -187,7 +155,7 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
             ].map(({ text, icon }, index) => (
               <li
                 key={index}
-                className="flex items-center gap-3 text-sm transition-colors duration-200"
+                className="flex items-center gap-3 text-sm text-neutral-700 bg-neutral-50 rounded-lg px-3 py-2 hover:bg-neutral-100 transition"
               >
                 <span className="text-lg">{icon}</span>
                 <span>{text}</span>
@@ -196,9 +164,10 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
           </ul>
         </div>
 
-        <div className="bg-neutral-100 rounded-xl p-4 shadow-md">
-          <div className="text-md font-semibold mb-4 flex items-center gap-2">
-            <span className="text-lg">ℹ️</span>
+        {/* Additional Info */}
+        <div className="rounded-2xl border border-neutral-200 bg-white shadow-sm hover:shadow-md transition p-6">
+          <div className="text-lg font-semibold mb-4 flex items-center gap-3 text-neutral-700">
+            <span className="text-xl">ℹ️</span>
             Additional Info
           </div>
           <ul className="space-y-3">
@@ -208,7 +177,7 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
             ].map(({ text, icon }, index) => (
               <li
                 key={index}
-                className="flex items-center gap-3 text-sm transition-colors duration-200"
+                className="flex items-center gap-3 text-sm text-neutral-700 bg-neutral-50 rounded-lg px-3 py-2 hover:bg-neutral-100 transition"
               >
                 <span className="text-lg">{icon}</span>
                 <span>{text}</span>

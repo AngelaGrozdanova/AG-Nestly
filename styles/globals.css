@@ -21,8 +21,8 @@ body,
 }
 
 .bg-rose-501 {
-  background-color: oklch(0.69 0.17 154.02);
-  box-shadow: 0 4px 10px oklch(0.85 0.1 154.02);
+  background-color: oklch(75.575% 0.14436 158.59);
+  box-shadow: 0 9px 10px oklch(75.292% 0.03048 156.56);
   color: white;
 }
 
